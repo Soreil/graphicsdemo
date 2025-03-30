@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="graphicsdemo.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:graphicsdemo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="graphicsdemo"    
+    Closed="Window_Closed">
+
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <SwapChainPanel x:Name="SwapChainCanvas" Width="500" Height="500" Loaded="SwapChainCanvas_Loaded"/>
+        <Slider Minimum="-10" Maximum="10" Width="450" ValueChanged="SliderX_ValueChanged"/>
+        <Slider Minimum="-10" Maximum="10" Width="450" ValueChanged="SliderY_ValueChanged"/>
+        <Slider Minimum="-10" Maximum="10" Width="450" ValueChanged="SliderZ_ValueChanged"/>
+    </StackPanel>
+</Window>

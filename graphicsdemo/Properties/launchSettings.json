@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "graphicsdemo (Package)": {
+      "commandName": "MsixPackage",
+      "nativeDebugging": true
+    },
+    "graphicsdemo (Unpackaged)": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}
